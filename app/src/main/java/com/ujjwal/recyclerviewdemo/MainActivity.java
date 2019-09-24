@@ -18,7 +18,7 @@ public class MainActivity extends AppCompatActivity {
         recyclerView = findViewById(R.id.main_recycler_view);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
         String[] language = {"JavaScript", "Python", "Java", "C", "C++", "PHP", "Swift", "C#", "Ruby", "Objective-C", "SQL", "Go", "Perl", "Scala", "Apex", "R", "SAS"};
-        RecyclerViewAdapter recyclerViewAdapter = new RecyclerViewAdapter(language);
+        RecyclerViewAdapter recyclerViewAdapter = new RecyclerViewAdapter(MainActivity.this, language);
         recyclerView.setAdapter(recyclerViewAdapter);
     }
 }
