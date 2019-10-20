@@ -1,3 +1,3 @@
 # Recycler View Demo
 
-![Login](images/Screenshot1.jpeg) ![Signup](images/Screenshot2.jpeg)
+![Screenshot1](images/Screenshot1.jpeg) ![Screenshot2](images/Screenshot2.jpeg)
