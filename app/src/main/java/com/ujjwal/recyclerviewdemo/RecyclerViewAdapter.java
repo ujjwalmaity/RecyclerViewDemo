@@ -1,5 +1,6 @@
 package com.ujjwal.recyclerviewdemo;
 
+import android.content.Context;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -11,10 +12,10 @@ import androidx.recyclerview.widget.RecyclerView;
 public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewHolder> {
 
     private String[] data;
-    MainActivity mainActivity;
+    private Context context;
 
-    RecyclerViewAdapter(MainActivity mainActivity, String[] data) {
-        this.mainActivity = mainActivity;
+    RecyclerViewAdapter(Context context, String[] data) {
+        this.context = context;
         this.data = data;
     }
 
@@ -34,7 +35,7 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewHolder
         holder.textView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Toast.makeText(mainActivity, holder.textView.getText().toString(), Toast.LENGTH_SHORT).show();
+                Toast.makeText(context, holder.textView.getText().toString(), Toast.LENGTH_SHORT).show();
             }
         });
     }
